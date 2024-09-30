@@ -126,8 +126,10 @@ This script will:
 
 ## Project Screenshots
 ###  1. Chatbot Interface
-
+![Logo](https://github.com/AzimMohideen/Chatbot/blob/main/Interface.png)
 ### 2. Tech Solutions Home Page
+![Logo](https://github.com/AzimMohideen/Chatbot/blob/main/HomePage.png)
+
 
 ## Technologies Used
 
