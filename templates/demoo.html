@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css"> <!-- Use all.min.css for FA 6 -->
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="/redirect/demoo"><img src="{{url_for('static', filename='neweagle.png')}}" alt="Logo"></a>
+            <div class="navlink" id="navLink">
+                <i class="fas fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="/redirect/demoo">HOME</a></li>
+                    <li><a href="/redirect/about">ABOUT</a></li>
+                    <li><a href="/redirect/blog">BLOG</a></li>
+                    <li><a href="/redirect/contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>WORLD'S BIGGEST TECH-SERVICES</h1>
+            <p>We innovate to simplify your life with cutting-edge technology,<br> delivering solutions that empower and inspire.</p>
+            <a href="https://www.amazon.in/ref=nav_logo" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
+
+    <section class="course">
+        <h1>Create a Module From a Template</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur architecto, veritatis porro cumque sint mollitia totam alias at error? Eum, atque repudiandae ratione dolore mollitia facere libero assumenda sint tempore.</p>
+        <p>The second way to create a module in Slider Revolution is from a template. Let's learn why, and how, you should make a template-based module.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Creating Module</h3>
+                <p>Everything covered in this ‘Create a Module from a Template’ sub-section of the manual can also be learned by watching the tutorial video below from the 6:23 minute mark:</p>
+            </div>
+            <div class="course-col">
+                <h3>Why Use a Template</h3>
+                <p>You want to create content quickly by leveraging a template to give you a head start.<br>You found something you love in the library of templates included with Slider Revolution and want to use it on your site.</p>
+            </div>
+            <div class="course-col">
+                <h3>Browsing Template</h3>
+                <p>In the main Slider Revolution interface, the button to create a module from a template is labeled New Module From Template.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="campus">
+        <h1>Our company</h1>
+        <div class="campus-col">
+            <img src="{{url_for('static', filename='company1.jpg.webp')}}" alt="Mumbai">
+            <div class="cc">
+                <h3>MUMBAI</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="{{url_for('static', filename='zoho.png')}}" alt="Delhi">
+            <div class="cc">
+                <h3>DELHI</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="{{url_for('static', filename='company2.jpg.webp')}}" alt="Chennai">
+            <div class="cc">
+                <h3>CHENNAI</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="facilities">
+        <h1>OUR FACILITIES</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente placeat ipsam nihil expedita fugiat quae non quam dolorum? Animi dignissimos eveniet quam modi esse omnis nihil id sed, quaerat dolorum.</p>
+        <div class="facility-col">
+            <img src="{{url_for('static', filename='lib1.jpg')}}" alt="Library">
+            <h3>World class library</h3>
+        </div>
+        <div class="facility-col">
+            <img src="{{url_for('static', filename='baby1.png')}}" alt="Baby Sitting Room">
+            <h3>A secured baby sitting room</h3>
+        </div>
+        <div class="facility-col">
+            <img src="{{url_for('static', filename='sports1.png')}}" alt="Sports Room">
+            <h3>World class sportsroom</h3>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h1>What our clients says</h1>
+        <div class="testi-col">
+            <img src="{{url_for('static', filename='clients1.jpg')}}">
+    
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <h3>BHRAHMESH</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+            </div>
+        </div>
+        <div class="testi-col">
+            <img src="{{url_for('static', filename='clients2.jpg')}}">
+    
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <h3>KRISHNA</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+                </div>
+                </div>
+        <div class="testi-col">
+        <img src="{{url_for('static', filename='clients3.webp')}}">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <h3>MATHEW</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+    </div>
+
+</section>
+
+<div class="chat-button" onclick="toggleChat()">
+    <i class='bx bx-chat bx-lg'></i>
+</div>
+<div class="chat-container" id="chat-container">
+    <h2 style="text-align: center; color: #312e2e; margin-bottom: 15px;">QuadBot</h2>
+    <div id="chat-box"></div>
+    <div class="button-container">
+        <input type="text" id="user-input" placeholder="Type a message...">
+        <button id="start-btn" onclick="startListening()"><i class='bx bx-microphone bx-md'></i></button>
+        <button id="send" onclick="sendMessage()"><i class='bx bx-send bx-md'></i></button>
+        <button id="switch-bot" onclick="switchBot()"><i class='bx bx-transfer-alt'></i></button> <!-- Bot switch button -->
+    </div>
+</div>
+<script src="{{url_for('static', filename='script.js')}}"></script>
+<script>
+    var navLink = document.getElementById("navLink");
+    function showmenu(){
+        navLink.style.right = "0";
+    }
+    function hidemenu(){
+        navLink.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

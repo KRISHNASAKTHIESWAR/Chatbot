@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TechSolutions</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="/redirect/demoo"><img src="{{url_for('static', filename='neweagle.png')}}" alt="Logo"></a>
+            <div class="navlink" id="navLink">
+                <i class="fas fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="/redirect/demoo">HOME</a></li>
+                    <li><a href="/redirect/about">ABOUT</a></li>
+                    <li><a href="/redirect/blog">BLOG</a></li>
+                    <li><a href="/redirect/contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>About Us</h1>
+        <p>Learn more about TechSolutions, our mission, and the team dedicated to bringing you the best in technology solutions.</p>
+            <a href="https://www.amazon.in/ref=nav_logo" class="hero-btn">Visit us to know more</a>
+            </div>
+    </section>
+
+    <section class="about">
+        <div class="about-container">
+            <div class="about-info">
+                <h2 style="text-align: center;">Our Mission</h2>
+                <p>At TechSolutions, our mission is to innovate and simplify your life with cutting-edge technology, delivering solutions that empower and inspire. We are dedicated to providing high-quality, reliable products and services that meet the diverse needs of our customers. Our goal is to make technology accessible and easy to use, ensuring that everyone can benefit from the advancements in this ever-evolving field.</p>
+                <p>We believe in fostering a culture of innovation, where creativity and collaboration drive our progress. Our team is constantly exploring new ideas and technologies to stay ahead of the curve and deliver solutions that make a real difference in people's lives.</p>
+            </div>
+            <div class="about-info">
+                <h2 style="text-align: center;">Our Vision</h2>
+                <p>We strive to be the world's leading provider of tech services, recognized for our commitment to excellence and our ability to drive progress and transformation. Our vision is to create a future where technology seamlessly integrates into every aspect of life, enhancing the way we live, work, and connect with each other.</p>
+                <p>We are committed to sustainability and ethical practices, ensuring that our growth contributes positively to the global community. By leveraging our expertise and resources, we aim to address some of the world's most pressing challenges and create solutions that have a lasting impact.</p>
+            </div>
+            <div class="about-info">
+                <h2 style="text-align: center;">Our Team</h2>
+                <p>Our team is comprised of passionate professionals who are experts in their respective fields. We work collaboratively to achieve our goals and support our clients in achieving theirs. Our diverse team brings a wealth of experience and knowledge, allowing us to approach problems from different perspectives and develop innovative solutions.</p>
+                <p>We prioritize continuous learning and professional development, ensuring that our team members are always equipped with the latest skills and knowledge. By fostering a supportive and inclusive work environment, we empower our employees to thrive and contribute their best work.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+    <script>
+        var navLink = document.getElementById("navLink");
+        function showmenu(){
+            navLink.style.right = "0";
+        }
+        function hidemenu(){
+            navLink.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

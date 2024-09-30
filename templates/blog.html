@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - TechSolutions</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="/redirect/demoo"><img src="{{url_for('static', filename='neweagle.png')}}" alt="Logo"></a>
+            <div class="navlink" id="navLink">
+                <i class="fas fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="/redirect/demoo">HOME</a></li>
+                    <li><a href="/redirect/about">ABOUT</a></li>
+                    <li><a href="/redirect/blog">BLOG</a></li>
+                    <li><a href="/redirect/contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+        <h1>Our Blog</h1>
+        <p>Stay updated with the latest trends and insights in technology. Read our latest articles and stay informed.</p>
+        <a href="https://www.amazon.in/ref=nav_logo" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
+
+    <section class="blog">
+       
+        <div class="blog-container">
+            <div class="blog-post">
+                <h2 style="text-align: center;">Latest in Tech</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur architecto, veritatis porro cumque sint mollitia totam alias at error? Eum, atque repudiandae ratione dolore mollitia facere libero assumenda sint tempore.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-post">
+                <h2 style="text-align: center;">Innovative Solutions</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur architecto, veritatis porro cumque sint mollitia totam alias at error? Eum, atque repudiandae ratione dolore mollitia facere libero assumenda sint tempore.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-post">
+                <h2 style="text-align: center;">Future of Tech</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur architecto, veritatis porro cumque sint mollitia totam alias at error? Eum, atque repudiandae ratione dolore mollitia facere libero assumenda sint tempore.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+    <script>
+        var navLink = document.getElementById("navLink");
+        function showmenu(){
+            navLink.style.right = "0";
+        }
+        function hidemenu(){
+            navLink.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
