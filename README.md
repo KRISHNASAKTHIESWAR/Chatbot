@@ -21,6 +21,22 @@ This project is a comprehensive application that integrates a chatbot with a web
 
 ```
 
+│   ├── chatbot.py
+│   ├── gptbot.py
+│   ├── model.py
+│   ├── nltk_utils.py
+│   ├── train.py
+│   ├── intents.json
+    ├── README.md
+│   ├── static/
+│   │   ├── script.js
+│   │   └── styles.css
+│   ├── templates/
+│   │   ├── about.html
+│   ├── blog.html
+│   ├── contact.html
+│   └── demoo.html
+
 ```
 ## Installation Instructions
 1.Clone the Repository:
