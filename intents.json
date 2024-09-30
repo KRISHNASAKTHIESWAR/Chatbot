@@ -1,0 +1,240 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hello",
+        "Good morning",
+        "Good afternoon",
+        "Greetings",
+        "Howdy",
+        "Hi there",
+        "Hey there",
+        "Morning",
+        "Afternoon",
+        "Yo",
+        "What's up"
+      ],
+      "responses": [
+        "Hi there! Welcome to TechSolutions. How may I assist you today?",
+        "Hello! It's great to have you here. How can TechSolutions help you?",
+        "Good morning! How can we make your day better?",
+        "Hey! Welcome to TechSolutions. How can we assist you?",
+        "Hi! How may I help you today?",
+        "Hello there! How can TechSolutions make your day easier?",
+        "Greetings! What can we do for you today?",
+        "Howdy! Welcome to TechSolutions. How can we support you?",
+        "Well met! How may I assist you today?",
+        "Salutations! How can TechSolutions serve you?"
+      ]
+    },
+    {
+      "tag": "employee_schedule",
+      "patterns": ["What is my schedule?", "When do I work next?", "Tell me my work hours", "Show me my schedule", "Do I have work tomorrow?", "What is my next shift?"],
+      "responses": ["Fetching your schedule. Please wait a moment..."],
+      "action": "fetch_employee_schedule"
+    },
+    {
+      "tag": "leave_balance",
+      "patterns": ["What is my leave balance?", "How many leave days do I have left?", "Tell me my remaining leave", "How many vacation days do I have?", "What is my current leave balance?"],
+      "responses": ["Fetching your leave balance. Please wait a moment..."],
+      "action": "fetch_leave_balance"
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Take care", "Catch you later", "Farewell", "Bye for now", "Have a good one", "Until next time", "Adios", "So long", "Later"],
+      "responses": [
+        "Goodbye! Don't hesitate to reach out if you need anything else.",
+        "See you later! Have a fantastic day.",
+        "Take care! We're looking forward to assisting you again soon.",
+        "Bye! Have a great day ahead.",
+        "Goodbye! Remember, we're just a message away if you need help.",
+        "Farewell! Until next time.",
+        "Take care! Don't hesitate to contact us if you have any questions.",
+        "Bye for now! We'll be here whenever you need assistance."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "Appreciate it","Ok sure" ,"Thanks a lot", "Much obliged", "Cheers", "You're awesome", "Gracias", "Merci", "Danke", "Thank you very much"],
+      "responses": [
+        "You're welcome! Let us know if there's anything else we can assist you with.",
+        "Anytime! We're here to help.",
+        "You're welcome! It's our pleasure to assist you.",
+        "Glad we could help! Feel free to ask if you need anything else.",
+        "You're welcome! If you have any more questions, just let us know.",
+        "No problem at all! We're happy to be of service.",
+        "You're welcome! Don't hesitate to reach out if you need further assistance.",
+        "Happy to assist! If you have any more questions, feel free to ask."
+      ]
+    },
+    {
+      "tag": "services",
+      "patterns": [
+        "What services do you offer?",
+        "Can you help with IT support?",
+        "What kind of solutions do you provide?",
+        "what kind of services you provide",
+        "Tell me about your services",
+        "What can you do for me?",
+        "What are the services you offer",
+        "How do you help businesses?",
+        "What do you specialize in?",
+        "Do you offer tech solutions for small businesses?",
+        "I need assistance with my IT infrastructure",
+        "Do you provide cloud solutions?",
+        "I'm looking for cybersecurity services",
+        "Can you help with software development?",
+        "Do you offer network setup services?",
+        "Can you assist with data management?",
+        "services"
+        
+      ],
+      "responses": [
+        "TechSolutions offers a comprehensive suite of IT services, including network infrastructure setup, software development, cybersecurity solutions, cloud computing, and more.",
+        "Our IT support services range from troubleshooting common issues to implementing complex system upgrades and optimizations.",
+        "We specialize in providing tailored IT solutions to meet the unique needs of your business, from data management to custom software development.",
+        "At TechSolutions, we offer a wide range of IT services designed to streamline your business operations and enhance efficiency.",
+        "From IT consulting to managed services, TechSolutions has the expertise to meet your technology needs and drive your business forward.",
+        "Our services include IT strategy development, software implementation, cloud migration, cybersecurity, and ongoing support to ensure your systems run smoothly.",
+        "Whether you need help with network infrastructure, software development, or cybersecurity, TechSolutions has you covered with our comprehensive range of services."
+      ],
+      "questions": [
+        "Sure, could you please provide more details about the specific IT service or solution you're interested in?",
+        "Great! To better assist you, could you tell me about your current IT infrastructure and any challenges you're facing?",
+        "Which aspect of our services are you most interested in? We can provide more details based on your specific needs.",
+        "Is there a particular area of your business where you're looking to improve efficiency or streamline operations? Our services can be customized to address your unique requirements."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "How can I contact you",
+        "What's your phone number?",
+        "Do you have an email address?",
+        "give me contact details",
+        "contact information",
+        "contact",
+        "I need to get in touch with you",
+        "Can I reach you by phone?",
+        "What's the best way to reach you?",
+        "Is there a contact form on your website?"
+      ],
+      "responses": [
+        "You can reach TechSolutions by phone at +1 (555) 123-4567 or via email at info@techsolutions.com.",
+        "Feel free to contact us anytime at +1 (555) 123-4567 or via email at info@techsolutions.com.",
+        "For inquiries or assistance, please contact us at +1 (555) 123-4567 or email us at info@techsolutions.com.",
+        "Our contact information is as follows: Phone: +1 (555) 123-4567, Email: info@techsolutions.com. Don't hesitate to reach out if you have any questions or need assistance."
+      ],
+      "questions": [
+        "Of course! How can I assist you further? Are you looking to schedule a consultation or inquire about our services?",
+        "Certainly! Is there a particular department or individual you're trying to reach, or do you have a general inquiry?",
+        "Would you prefer to contact us by phone or email? Let me know how you'd like to proceed.",
+        "Are you facing any specific challenges or issues that you'd like assistance with? Our team is here to help, so feel free to reach out."
+      ]
+    },
+    {
+      "tag": "pricing",
+      "patterns": [
+        "How much do your services cost?",
+        "pricing of your services",
+        "What are your rates?",
+        "Can you provide a quote?",
+        "I'm interested in your prices",
+        "What's your pricing model?",
+        "Do you offer free consultations?",
+        "Are there any hidden fees?",
+        "What payment methods do you accept?",
+        "Are your prices negotiable?",
+        "Are there any discounts available?",
+        "Do you offer service packages?",
+        "price",
+        "cost"
+      ],
+      "responses": [
+        "Our pricing is customized based on your specific requirements. Please contact our sales team for a personalized quote.",
+        "We offer competitive rates tailored to your needs. Get in touch with us to discuss your project and receive a detailed pricing estimate.",
+        "For pricing information, please reach out to our sales department. They'll be happy to provide you with a quote based on your project specifications.",
+        "Since our services are tailored to each client's unique needs, pricing varies. We'd be happy to provide you with a personalized quote based on your requirements.",
+        "At TechSolutions, we believe in transparent pricing. Contact us today to discuss your project, and we'll provide you with a detailed quote tailored to your needs."
+      ],
+      "questions": [
+        "Certainly! To provide you with an accurate quote, could you please provide more details about your project requirements?",
+        "Absolutely! Could you tell me more about the scope of your project and any specific features or functionalities you're looking to implement?",
+        "Are there any budget constraints or preferences we should be aware of while preparing your quote?",
+        "Do you have a timeframe for your project? Knowing your deadlines will help us provide you with an accurate quote."
+      ]
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "What are the business hours?",
+        "When are you open?",
+        "What time can I reach you?",
+        "When is your office open?",
+        "Are you available on weekends?",
+        "What are your support hours?",
+        "When can I schedule a consultation?",
+        "Do you offer evening appointments?",
+        "Are you closed on holidays?",
+        "What are your operating hours during the holidays?",
+        "Can I visit your office without an appointment?"
+      ],
+      "responses": [
+        "TechSolutions is open Monday to Friday from 9:00 AM to 6:00 PM.",
+        "Our business hours are Monday through Friday, 9:00 AM to 6:00 PM. We're closed on weekends and major holidays.",
+        "You can reach us during our business hours, which are Monday to Friday, 9:00 AM to 6:00 PM.",
+        "Our office hours are from 9:00 AM to 6:00 PM, Monday through Friday. We're here to assist you during these times."
+      ],
+      "questions": [
+        "Got it! Is there a specific time you're planning to visit our office, or do you have a general inquiry?",
+        "Sure thing! Are you looking to schedule a meeting during our regular business hours, or do you have another inquiry?",
+        "If you need assistance outside of our regular business hours, feel free to let us know, and we'll do our best to accommodate your request.",
+        "Are you located in a different time zone? Let us know, and we'll adjust our availability accordingly to better serve you."
+      ]
+    },
+    {
+      "tag": "emergency",
+      "patterns": [
+        "Do you offer emergency support?",
+        "What if I have an urgent issue?",
+        "I have a critical problem",
+        "My issue needs immediate attention",
+        "Emergency assistance required",
+        "I need help urgently",
+        "Can you help me right away?",
+        "My system is down",
+        "I can't access my data",
+        "Urgent IT problem",
+        "I'm facing a cybersecurity threat",
+        "My network is compromised"
+      ],
+      "responses": [
+        "Yes, we provide 24/7 emergency support for critical issues. Please call our emergency hotline at +1 (555) 987-6543 for immediate assistance.",
+        "In case of an urgent issue, don't hesitate to contact our emergency support team at +1 (555) 987-6543. We're here to help you around the clock.",
+        "For urgent matters, you can rely on our emergency support team, available 24/7. Reach out to us at +1 (555) 987-6543, and we'll assist you promptly.",
+        "We understand the importance of resolving critical issues promptly. Contact our emergency support hotline at +1 (555) 987-6543 for immediate assistance."
+      ],
+      "questions": [
+        "Understood! Could you please provide more details about the nature of the emergency or issue you're experiencing?",
+        "I see! To assist you more effectively, could you provide additional information about the urgency and impact of the issue?",
+        "Is this a recurring issue, or is it something new that requires immediate attention? Providing more context will help us address the issue more efficiently.",
+        "Are there any specific troubleshooting steps you've already taken? Let us know so we can better assist you."
+      ]
+    },
+    {
+      "tag": "employee_schedule",
+      "patterns": ["what is the schedule for [employee_name]?", "When does [employee_name] work next?", "Tell me the work hours for [employee_name]", "Show me the schedule for [employee_name]", "Does [employee_name] have work tomorrow?", "What is [employee_name]'s next shift?"],
+      "responses": ["Fetching the schedule for [employee_name]. Please wait a moment..."],
+      "action": "fetch_employee_schedule"
+    },
+    {
+      "tag": "leave_balance",
+      "patterns": ["what is the leave balance for [employee_name]?", "How many leave days does [employee_name] have left?", "Tell me the remaining leave for [employee_name]", "How many vacation days does [employee_name] have?", "What is the current leave balance for [employee_name]?"],
+      "responses": ["Fetching the leave balance for [employee_name]. Please wait a moment..."],
+      "action": "fetch_leave_balance"
+    }
+  ]
+}
